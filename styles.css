@@ -4,6 +4,7 @@ body{
 	background-image: url('Images/Beach.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+	margin: 0;
 }
 header{
 	background-color: antiquewhite;
@@ -13,7 +14,6 @@ header{
 	left: 0;
 	width: 100vw;
 	max-height: 80px;
-	opacity: 0.1;
 }
 nav{
 	display: flex;
@@ -23,7 +23,6 @@ nav{
 	z-index: 3;
 }
 nav img{
-/*	padding: 10px 10px;*/
 	max-height: 60px;
 }
 
@@ -35,3 +34,38 @@ nav ul li{
 nav ul li a{
 	z-index: 4;
 }
+
+.title-card-buffer{
+
+	height: 300px;
+
+}
+.title-card-container{
+
+	position: absolute;
+	min-height: 400px;
+	width: 100%;
+	
+
+}
+.text{
+
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	color: rgb(5, 37, 9);
+}
+h1{
+
+	font-size: 120px;
+	line-height: 0;
+
+}
+h2{
+
+	font-size: 30px;
+	
+}
+
+
+
+
