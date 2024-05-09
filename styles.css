@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-	background-image: url('Beach.jpg');
+	background-image: url('Images/Beach.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
