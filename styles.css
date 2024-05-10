@@ -1,69 +1,92 @@
 @charset "UTF-8";
 
 body{
+	margin: 0;
+	font-size: 100%;
+	min-width: 500px;
+}
+.page{
+	height: calc(100vh);
 	background-image: url('Images/Beach.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 	margin: 0;
 }
-.title-card-buffer{
-
-	height: 300px;
-
-}
-.title-card-container{
-
-	position: absolute;
-	min-height: 400px;
+header{
+	position: fixed;
+	z-index: 1;
 	width: 100%;
-	
-
-}
-.text{
-
+	height: 10vh;
 	font-family: "Times New Roman", Times, serif;
 	text-align: center;
 	color: rgb(5, 37, 9);
-}
-h1{
-
-	font-size: 120px;
+	font-size: 3vh;
 	line-height: 0;
-
-}
-h2{
-
-	font-size: 30px;
-	
 }
 nav{
+	
 	display: flex;
 	align-content: center;
 	justify-content: space-between;
-	padding: 10px 10px;
-	z-index: 3;
+	/* padding: 10px 10px; */
+	
 }
 nav img{
 	height: 60px;
 	width: 60px;
 }
-
 nav ul li{
 	display: inline-block;
 	list-style: none;
-	margin: 10px 30px;
+	margin: 20px 30px;
 }
 nav ul li a{
-	z-index: 4;
-}
+	
 
 
-.header{
-	background-color: antiquewhite;
-	z-index: 2;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	max-height: 80px;
 }
+.active {
+
+	color: green;
+
+}
+a:link {
+	/* color: white; */
+	text-decoration: none;
+}
+
+a:visited {
+	/* color: white; */
+	text-decoration: none;
+}
+
+a:hover {
+	/* color: green; */
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.text{
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	color: rgb(5, 37, 9);
+}
+h1{
+	font-size: 9rem;
+	line-height: 0;
+}
+h2{
+	font-size: 2rem;
+}
+.title-card-buffer{
+	height: calc(30vh);
+}
+.title-card-container{
+	position: absolute;
+	min-height: 400px;
+	width: 100%;
+}
+
