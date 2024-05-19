@@ -4,94 +4,364 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="styles.css">
-	<title>Shades</title>
+	<title>RagullAru</title>
 
 </head>
 
 <body>
 
-
-	<p id="pages" style="position: fixed;"></p>
-	<div class="page" id="home">
-
-		<header>
+	<header id="headerPane" class="backgroundhidden">
 			
-			<nav>
-				<u1></u1>
-				<ul>
-					<li><a href="#home" id="hometab"  class="active">Home</a></li>
-					<li><a href="#about" id="abouttab">About Me</a></li>
-					<li><a href="#resume" id="resumetab">Resume</a></li>
-					<li><a href="#projects" id="projectstab">Projects</a></li>
-					<li><a href="#contact" id="contacttab">Contact</a></li>
-					<div id="hi"></div>
-				</ul>
-				<ul></ul>
-			</nav>
-			
-		</header>
-
-		<div class="title-card-buffer">
-		</div>
+		<nav>
+			<ul>
+				<li><a href="#home" id="hometab" class="active">Home</a></li>
+				<li><a href="#about" id="abouttab">About Me</a></li>
+				<li><a href="#resumeBlock" id="resumetab">Resume</a></li>
+				<li><a href="#projects" id="projectstab">Projects</a></li>
+				<li><a href="#contact" id="contacttab">Contact</a></li>
+			</ul>
+		</nav>
 		
+	</header>
+
+	<div id="home" class="page">
+
+		<div class="page-buffer" style="height: calc(25vh)"></div>
 		
 		<div class="title-card-container">
 
-			<div class="text">
-				<h1>
+				<h1 id="title">
 					Ragull Arumugam
 				</h1>
-				<h2>
+				<h2 id="titleInfo">
 					Computer Science Student at the University of Pittsburgh
 				</h2>
-			</div>
-			<nav>
-				<ul></ul>
+			<nav id="navbar">
 				<ul>
-					<li><a href="https://www.linkedin.com/in/ragull-aru/" target="_blank"><img src="Images/linkedin.png"></a></li>
-					<li><a href="https://github.com/Ragullaru" target="_blank"><img src="Images/github.png"></a></li>
-					<li><a href="mailto:ragull1213@gmail.com"><img src="Images/gmail.png"></a></li>
+					<li><a href="https://www.linkedin.com/in/ragull-aru/" target="_blank"><img src='Images/linkedin.png' 
+						onmouseover="this.src='Images/linkedin_hovered.png';" onmouseout="this.src='Images/linkedin.png';"></a></li>
+					<li><a href="https://github.com/Ragullaru" target="_blank"><img src='Images/github.png'
+						onmouseover="this.src='Images/github_hovered.png';" onmouseout="this.src='Images/github.png';"></a></li>
+					<li><a href="mailto:ragull1213@gmail.com" target="_blank"><img src='Images/gmail.png'
+						onmouseover="this.src='Images/gmail_hovered.png';" onmouseout="this.src='Images/gmail.png';"></a></li>
 				</ul>
-				<ul></ul>
 			</nav>
 
 		</div>
 	</div>
-	<div class="page" id="about"></div>
-	<div class="page" id="resume"></div>
-	<div class="page" id="projects"></div>
-	<div class="page" id="contact"></div>
+
+	<div id="aboutBlock" class="page">
+		<div id="about">
+		
+			<section class="left l_about" img src="Images/RagullPFP.jpg">
+				
+				<img id="pfp" src="Images/RagullPFP3.png">
+
+
+
+
+			</section>
+			
+
+
+			<section class="right r_about">
+
+				<div style="margin: 50px;">
+					<h2 id="aboutTitle">I'm Ragull!</h2>
+					<h3 id="aboutText">
+						
+
+						I am a junior at the University of Pittsburgh studying Computer Science, class of 2026.
+						I am looking for IT oppurtunities to develop my professional skills and gain experience in the field
+
+						<section class="left l_about2">abcd</section>
+						<section class="left r_about2">abcd</section>
+
+					</h3>
+				</div>
+
+			</section>
+
+		</div>
+	</div>
+
+	<div id="resumeBlock" class="page">
+	<div id="resume">
+
+		<h1 class="pageTitle" style="font-size: 5vh; text-align: center;">RESUME</h1>
+		<h2 class="resumeText" style="font-size: 2vh;">Highly organized and passionate UPitt sophomore with excellent communication skills and a strong work ethic. Proven ability to work well in team environments and collaborate effectively with peers. Seeking internship opportunities in the field of computer science or biomedical fields to develop my professional skills and contribute to a dynamic environment.
+
+		</h2>
+		<h1 class="pageTitle" style="font-size: 2.25vh;">
+
+			LOL@Pitt</h1>
+		<h1 class="pageTitle" style="font-size: 1.9vh; display: flex; justify-content: space-between; padding-top: 0px; line-height: 0px;">	
+			<div>Streaming Coordinator</div><div> 2024 - Now </div>
+		</h1>
+
+		<h2 class="resumeText" style="font-size: 1.75vh; padding-left: 80px;">
+			Developed and implemented a new framework for the streaming of LOL@Pitt games, improving viewership to upwards of 100 people every week, more than a 300% increase. 
+			Organized regular meetings with casters to consistently improve and bring about new ideas to the streams.
+			Managed and integrated new members to the casting atmosphere, assisting them in their growth as casters
+		</h2>
+
+		<h1 class="pageTitle" style="font-size: 2.25vh;">
+
+			Conestoga Stage Crew</h1>
+		<h1 class="pageTitle" style="font-size: 1.9vh; display: flex; justify-content: space-between; padding-top: 0px; line-height: 0px;">	
+			<div>Sound Crew Principal</div><div> 2018 - 2022 </div>
+		</h1>
+
+		<h2 class="resumeText" style="font-size: 1.75vh; padding-left: 80px;">
+			Led club members to construct a set, managing materials and designing complex structures within allotted time.
+			Responsible for the set-up and operation of sound systems while training 6 new crew members.
+			Collaborated with hundreds of actors and other crew heads to organize several award-winning productions, earning sound awards for both shows under my leadership.
+		</h2>
+
+		<h1 class="pageTitle" style="font-size: 2.25vh;">
+
+			Allied Health</h1>
+		<h1 class="pageTitle" style="font-size: 1.9vh; display: flex; justify-content: space-between; padding-top: 0px; line-height: 0px;">	
+			<div>Student</div><div> 2021 - 2022 </div>
+		</h1>
+
+		<h2 class="resumeText" style="font-size: 1.75vh; padding-left: 80px;">
+			Selective high school program for students with interest and experience in medicine field.
+			Multitude of clinical opportunities which required professional mannerism while collaborating with patients and medical professionals.
+			Classwork included rigorous workload covering material from advanced college curriculum.
+		</h2>
+
+		<section class="left l_resume">
+
+			<h2 id="skillsTitle">Languages</h2>
+			<h3 id="skillsText">
+				Java
+				<div class="percent_bar">	<div class="percent_amt" style="width: 75%;"></div>		</div>
+				<br>Python
+				<div class="percent_bar">	<div class="percent_amt" style="width: 70%;"></div>		</div>
+				<br>Microsoft Office
+				<div class="percent_bar">	<div class="percent_amt" style="width: 90%;"></div> 	</div>
+				<br>HTML/CSS/JavaScript
+				<div class="percent_bar">	<div class="percent_amt" style="width: 50%;"></div> 	</div>
+			</h3>
+
+		</section>
+		
+		<section class="right r_resume">
+
+			<h2 id="skillsTitle">Skills</h2>
+			<h3 id="skillsText">
+				Communication
+				<div class="percent_bar">	<div class="percent_amt" style="width: 90%;"></div>		</div>
+				<br>Collaboration
+				<div class="percent_bar">	<div class="percent_amt" style="width: 95%;"></div>		</div>
+				<br>Leadership
+				<div class="percent_bar">	<div class="percent_amt" style="width: 80%;"></div> 	</div>
+				<br>Hard-Working
+				<div class="percent_bar">	<div class="percent_amt" style="width: 85%;"></div> 	</div>
+			</h3>
+
+		</section>
+
+		<div class="buttonBlock">
+			<a id="resumeButton" href="RagullArumugamResume.pdf" target="_blank" download>Download my Full Resume</a>
+		</div>
+
+
+	</div>
+	</div>
+	<div class="page" id="projects">
+
+		<h1 class="pageTitle" style="font-size: 5vh; 	text-align: center; color: #374649;">My Projects</h1>
+
+		<nav class="projectNav">
+			<ul>
+				<li><div class="projectBox">
+					<a href="https://public.tableau.com/views/Costs_17147550358810/Planner?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+					target="_blank">
+					<img src="Images/Tableau.png" class="projectImage">
+					<div class="overlay">Tableau budget-management dashboard that analyzes and displays key insights on budgeted variances</div></a>
+				</div></li>
+
+				<li><div class="projectBox">
+					<a href="https://github.com/Ragullaru/Personal" target="_blank">
+					<img src="Images/Website.png" class="projectImage">
+					<div class="overlay">Backend code for this website which includes its HTML, CSS, and Javascript sections</div></a>
+				</div></li>
+
+				<li><div class="projectBox">
+					<a href="https://public.tableau.com/views/Costs_17147550358810/Planner?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+					target="_blank">
+					<img src="Images/Tableau.png" class="projectImage">
+					<div class="overlay">Used Riot Games API to design and build a custom overlay HUD for use in streams
+						to provide a clearer display that transmits useful information to viewers</div></a>
+				</div></li>
+
+				<li><div class="projectBox">
+					<a href="https://public.tableau.com/views/Costs_17147550358810/Planner?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+					target="_blank">
+					<img src="Images/Tableau.png" class="projectImage">
+					<div class="overlay">Developed a custom strema overlay for use in broadcasts by creating my own designs</div></a>
+				</div></li>
+
+			</ul>
+		</nav>
+
+		<h1 class="pageTitle" style="font-size: 5vh; 	text-align: center; color: #374649;">Future Projects</h1>
+
+		<nav class="projectNav">
+			<ul>
+				<li><div class="projectBox">
+					<a href="https://public.tableau.com/views/Costs_17147550358810/Planner?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+					target="_blank">
+					<img src="Images/Tableau.png" class="projectImage">
+					<div class="overlay">Tableau budget-management dashboard that analyzes and displays key insights on budgeted variances</div></a>
+				</div></li>
+
+				<li><div class="projectBox">
+					<a href="https://github.com/Ragullaru/Personal" target="_blank">
+					<img src="Images/Website.png" class="projectImage">
+					<div class="overlay">Backend code for this website which includes its HTML, CSS, and Javascript sections</div></a>
+				</div></li>
+
+				<li><div class="projectBox">
+					<a href="https://public.tableau.com/views/Costs_17147550358810/Planner?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
+					target="_blank">
+					<img src="Images/Tableau.png" class="projectImage">
+					<div class="overlay">Used Riot Games API to design and build a custom overlay HUD for use in streams
+						to provide a clearer display that transmits useful information to viewers</div></a>
+				</div></li>
+
+			</ul>
+		</nav>
+
+		<div class="page-buffer" style="height: 50px"></div>
+	</div>
+
+<div class="page" id="contact">
+
+	<h1 class="pageTitle" style="font-size: 5vh; text-align: center;">CONTACT ME</h1>
+
+
+
+
+
+	<div class="contactText">
+
+		<ul>
+			<li><img class="contactImg" src='Images/gmail_white.png'>Email: 
+				<a href="mailto:ragull1213@gmail.com" target="_blank">ragull1213@gmail.com</a></li>
+			<li><img class="contactImg" src='Images/phone_white.png'>Phone:
+				<a href=tel: +14845573922>(484)-557-3922</a></li>
+			<li><img class="contactImg" src='Images/location_white.png'>Location:
+				<a href="https://www.google.com/maps/place/Pittsburgh,+PA" target="_blank">Pittsburgh, PA 15213 </a> & 
+				<a href="https://www.google.com/maps/place/Wayne,+PA" target="_blank">Wayne, Pa 19087</a></li>
+		</ul>
+		<ul>
+			<li><img class="contactImg" src='Images/linkedin_white.png'>LinkedIn:
+				<a href="https://www.linkedin.com/in/ragull-aru/" target="_blank">linkedin.com/in/ragull-aru</a></li>
+			<li><img class="contactImg" src='Images/github_white.png'>Github:
+				<a href="https://github.com/Ragullaru" target="_blank">github.com/Ragullaru</a></li>
+		</ul>
+	</div>
+
+	<div class="page-buffer" style="height: 25px"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
 </body>
 
+
 <script>
 
-	window.onscroll = function() {changeTab()};
-	tabList = ["hometab","abouttab","resumetab","projectstab","contacttab"];
-	console.log(tabList[getTabNum()]);
-	currTab = document.getElementById(tabList[getTabNum()]);
+	window.addEventListener('scroll', function() {
 
-	function changeTab() {
-		document.getElementById("pages").innerText = Math.trunc(document.documentElement.scrollTop/document.documentElement.clientHeight);
-		newTab = document.getElementById(tabList[getTabNum()]);
-		if(newTab != currTab){
-			currTab.classList.remove("active");
-			newTab.classList.add("active");
-			currTab = newTab;
-		}
-		
-	}
+    	const header = document.getElementById('headerPane');
+        const pages = document.querySelectorAll('.page');
+        const scrollPos = window.scrollY;
+        const halfPageSize = window.innerHeight / 2;
 
+        pages.forEach(page => {
+            const top = page.offsetTop;
+            const height = page.offsetHeight;
 
-	function getTabNum() {return Math.trunc(document.documentElement.scrollTop/document.documentElement.clientHeight + 0.5);}
+            if (scrollPos + halfPageSize >= top && scrollPos + halfPageSize < top + height) {
+                const id = page.getAttribute('id');
+                const correspondingLink = document.querySelector(`#headerPane nav ul li a[href="#${id}"]`);
 
+                if (correspondingLink) {
+                    document.querySelectorAll('#headerPane nav ul li a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    correspondingLink.classList.add('active');
+                }
+            }
 
+            const firstPage = document.getElementById('home');
+            const firstPageSize = firstPage.offsetHeight * 0.2;
+			const secondPage = document.getElementById('about');
+            const secondPageTop = secondPage.offsetTop;
 
+			if(scrollPos < secondPageTop){
 
+				if(scrollPos >= firstPageSize){
+					header.classList.add('hidden');
+				} else {
+					header.classList.remove('hidden');
+				}
+				header.classList.add('backgroundhidden');
 
+			} else {
 
+				header.classList.remove('backgroundhidden');
+				header.classList.remove('hidden');
+
+			}
+
+			const lastPage = document.getElementById('contact');
+            const lastPageTop = lastPage.offsetTop;
+			const lastPageSize = lastPage.offsetHeight;
+
+			if(scrollPos + window.innerHeight  >= lastPageTop+lastPageSize - 80){
+			
+				const correspondingLink = document.querySelector(`#headerPane nav ul li a[href="#contact"]`);
+			
+				if (correspondingLink) {
+                    document.querySelectorAll('#headerPane nav ul li a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    correspondingLink.classList.add('active');
+                }
+			
+			}
+
+        });
+    });
 
 </script>
-
 
 </html>
