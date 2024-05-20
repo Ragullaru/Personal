@@ -27,15 +27,17 @@ body{
 .r_about{
 	width: 40%;
 	height: 100%;
-	
+	line-height: 1.25;
 }
 .l_about2{
 	width: 50%;
 	height: 100%;
+	text-align: center;
 }
 .r_about2{
 	width: 50%;
 	height: 100%;
+	text-align: center;
 }
 .l_resume{
 	width: 50%;
@@ -49,6 +51,11 @@ body{
 /* LINKS */
 a{
 	color: #dfe0ea;
+	/* -webkit-text-stroke-color: rgb(26, 37, 40, 0.8); */
+}
+header a{
+	/* color: #000; */
+	/* font-family: Trueno_Bold; */
 }
 a:link {
 	text-decoration: none;
@@ -68,9 +75,14 @@ a:active {
 /* TEXT */
 @font-face {
 	font-family: Trueno;
-	/* src: url(Fonts/Trueno-75PE.otf); */
 	src: url(Fonts/Trueno-wml2.otf);
 }
+@font-face {
+	font-family: Trueno_light;
+	src: url(Fonts/TruenoLight-E2pg.otf);
+}
+
+
 .h1 .h2 .h3 .h4 .h5{
 	color: black;
 }
@@ -87,15 +99,15 @@ a:active {
 	padding-top: 10px;
 }
 #aboutTitle{
-	font-size: 4em;
-	line-height: 1.6;
+	font-size: 5em;
+	line-height: 1.2;
 	padding-left: 50px;
 }
 #aboutText{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	padding-left: 50px;
 	padding-right: 50px;
-	text-align: justify;
+	/* text-align: justify; */
 }
 
 /* HEADER */
@@ -104,8 +116,9 @@ header{
 	z-index: 1;
 	width: 100%;
 	text-align: center;
-	color: black;
-	font-size: 2.5vh;
+	/* color: black; */
+	/* -webkit-text-stroke-width: .03em; */
+	font-size: 2.6vh;
 	line-height: 0;
 	transition: opacity 0.4s ease;
 	background-color: rgb(26, 37, 40, 0.8) ;
@@ -224,21 +237,15 @@ li{
 #aboutBlock{
 	width: 100%;
 	background-color: #dfe0ea;
+	/* background-color: #1927b8; */
 	color: #374649;
 	/* display: flex; */
 	align-items: center;
 	justify-content: center;
-	
-
 }
 
 #about{
-	display: block	;
-	/* height: 120vh; */
-	/* overflow: hidden; */
-	/* left: 5%; */
-	/* width: 50%; */
-	/* min-width: 700px; */
+	display: flex;
 }
 #pfp{
 	height: 100%;
