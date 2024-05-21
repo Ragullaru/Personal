@@ -79,22 +79,22 @@ a:active {
 }
 #title{
 	text-align: center;
-	font-size: 6.5vw;
+	font-size: 7em;
 	line-height: 0;
 }
 #titleInfo{
 	text-align: center;
-	font-size: 1.3vw;
+	font-size: 1.5em;
 	line-height: 0;
 	padding-top: .8vw;
 }
 #aboutTitle{
-	font-size: 5.2vw;
+	font-size: 6em;
 	line-height: 1.2;
 	padding-left: 2.5vw;
 }
 #aboutText{
-	font-size: 1.3vw;
+	font-size: 1.5em;
 	padding: 0 2.5vw;
 }
 
@@ -104,7 +104,7 @@ header{
 	z-index: 1;
 	width: 100%;
 	text-align: center;
-	font-size: 1.2vw;
+	font-size: 1.5em;
 	line-height: 0;
 	transition: opacity 0.4s ease;
 	background-color: rgb(26, 37, 40, 0.8) ;
@@ -245,17 +245,17 @@ li{
 	color: #adb7c4;
 }
 #skillsTitle{
-	font-size: 1.1vw;
+	font-size: 1.3em;
 	text-align: center;
 }
 #skillsText{
-	font-size: .8vw;
+	font-size: 1em;
 	padding-left: 50px;
 }
 .contactText{
-	font-size: .8vw;
+	font-size: 1em;
 	padding-left: 50px;
-	color: white;
+	color: white;	
 }
 .contactText img{
 
