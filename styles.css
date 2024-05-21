@@ -5,27 +5,21 @@ html{
 }
 body{
 	margin: 0;
-	font-size: 1vw;
-	/* min-width: 500px; */
+	font-size: 100%;
 	height: 100%;
 	font-family: Trueno;
-	/* overflow: hidden; */
-	
 }
+
 .left {
 	float: left;
-	/* background-color: rgb(199, 0, 0); */
 }
 .right {
 	float: right;
-	/* background-color: azure; */
 }
 .l_about{
 	width: 60%;
 	height: 100%;
 	line-height: 0;
-
-	/* background-image: url("Images/RagullPFP.jpg"); */
 }
 .r_about{
 	width: 40%;
@@ -54,11 +48,6 @@ body{
 /* LINKS */
 a{
 	color: #dfe0ea;
-	/* -webkit-text-stroke-color: rgb(26, 37, 40, 0.8); */
-}
-header a{
-	/* color: #000; */
-	/* font-family: Trueno_Bold; */
 }
 a:link {
 	text-decoration: none;
@@ -67,7 +56,6 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	
 	color: #e97f0d;
 	text-decoration: none;
 }
@@ -91,26 +79,23 @@ a:active {
 }
 #title{
 	text-align: center;
-	font-size: 7em;
+	font-size: 6.5vw;
 	line-height: 0;
-	padding: 10px;
 }
 #titleInfo{
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.3vw;
 	line-height: 0;
-	padding-top: 10px;
+	padding-top: .8vw;
 }
 #aboutTitle{
-	font-size: 5em;
+	font-size: 5.2vw;
 	line-height: 1.2;
-	padding-left: 50px;
+	padding-left: 2.5vw;
 }
 #aboutText{
-	font-size: 1.2em;
-	padding-left: 50px;
-	padding-right: 50px;
-	/* text-align: justify; */
+	font-size: 1.3vw;
+	padding: 0 2.5vw;
 }
 
 /* HEADER */
@@ -119,9 +104,7 @@ header{
 	z-index: 1;
 	width: 100%;
 	text-align: center;
-	/* color: black; */
-	/* -webkit-text-stroke-width: .03em; */
-	font-size: 2.6vh;
+	font-size: 1.2vw;
 	line-height: 0;
 	transition: opacity 0.4s ease;
 	background-color: rgb(26, 37, 40, 0.8) ;
@@ -132,19 +115,9 @@ header.hidden{
 header.backgroundhidden{
 	background-color: transparent;
 }
-/* nav{
-	display: flex;
-	align-content: center;
-	justify-content: space-between;
-} */
-/* nav ul li{
-	display: inline-block;
-	list-style: none;
-	margin: 10px 30px;
-}	 */
 #navbar img{
-	height: 60px;
-	width: 60px;
+	height: 3vw;
+	width: 3vw;
 }
 
 ul{ 
@@ -156,14 +129,12 @@ ul{
 	} 
 li{ 
 	display:inline; 
-	/* margin: 0 10px; */
-	padding: 10px 30px;
+	padding: .8vw 2vw;
 }
 
 
 .projectBox {
 	position: relative;
-	/* width: 50%; */
 
 	min-height: 180px;
 	max-height: 200px;
@@ -177,12 +148,8 @@ li{
 
   }
   
-  /* Make the image to responsive */
 .projectImage {
-	/* display: block; */
 	width: 100%;
-	/* height: 20px;
-	width: 325px; */
 	height: 100%;
 }
   
@@ -200,15 +167,12 @@ li{
 	font-size: 20px;
 	display: flex;
 	align-items: center;
-	/* padding: 20px 0px; */
-	/* transform: translate(-50%, -50%); */
 	text-align: center;
 	padding: 20px;
 	box-sizing: border-box;
 	
 }
   
-  /* When you mouse over the container, fade in the overlay title */
 .projectBox:hover .overlay {
 	opacity: 1;
   }
@@ -220,6 +184,7 @@ li{
 /* TITLE */
 #home{
 	height: 100vh;
+	/* max-height: 100vw; */
 	background-image: url('Images/background.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -228,11 +193,11 @@ li{
 	color: #1a2528;
 }
 .page-buffer{
-	height: calc(25vh);
+	height: 25vh;
 }
 .title-card-container{
 	position: absolute;
-	min-height: 400px;
+	/* min-height: 400px; */
 	width: 100%;
 }
 
@@ -240,9 +205,7 @@ li{
 #aboutBlock{
 	width: 100%;
 	background-color: #dfe0ea;
-	/* background-color: #1927b8; */
 	color: #374649;
-	/* display: flex; */
 	align-items: center;
 	justify-content: center;
 }
@@ -253,7 +216,6 @@ li{
 #pfp{
 	height: 100%;
 	width: 100%;
-	/* padding: 5%; */
 }
 
 /* RESUME */
@@ -267,11 +229,11 @@ li{
 }
 #resume{
 	width: 50%;
-	min-width: 700px;
+	/* min-width: 700px; */
 	overflow: hidden;
 }
 .pageTitle{
-	font-size: 5vh;
+	/* font-size: 5em; */
 	padding-top: 30px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -280,24 +242,20 @@ li{
 .resumeText{
 	padding-left: 50px;
 	padding-right: 50px;
-	font-size: 2vh;
 	color: #adb7c4;
 }
 #skillsTitle{
-	font-size: 2vh;
+	font-size: 1.1vw;
 	text-align: center;
 }
 #skillsText{
-	font-size: 1.5vh;
+	font-size: .8vw;
 	padding-left: 50px;
 }
 .contactText{
-	font-size: 1.5vh;
+	font-size: .8vw;
 	padding-left: 50px;
 	color: white;
-	/* display: inline-block; */
-	/* text-align: center; */
-	
 }
 .contactText img{
 
@@ -307,21 +265,6 @@ li{
 	padding: 10px;
 
 }
-/* .contactText h2{
-
-	vertical-align: middle;
-
-} */
-
-/* .contactImg{
-
-	height: 40px;
-	width: 40px;
-	padding-left: 50px;
-	line-height: 0;
-
-} */
-
 
 
 
@@ -393,6 +336,5 @@ li{
 
 	background-color: rgb(5, 20, 33);
 	overflow: hidden;
-	/* height: 500px; */
 
 }
