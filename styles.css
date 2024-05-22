@@ -227,9 +227,9 @@ li{
 		font-size: 1.75em;
 	}
 	#navbar img{
-		height: 10vw;
-		width: 10vw;
-		padding: 1vw 5vw;
+		height: 6vw;
+		width: 6vw;
+		/* padding: 1vw 3vw; */
 	}
 	/* TITLE */
 	#home{
