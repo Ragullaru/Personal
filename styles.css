@@ -47,16 +47,7 @@ a:active {
 .right {
 	float: right;
 }
-.l_about{
-	width: 60%;
-	height: 100%;
-	line-height: 0;
-}
-.r_about{
-	width: 40%;
-	height: 100%;
-	line-height: 1.25;
-}
+
 .l_about2{
 	width: 50%;
 	height: 100%;
@@ -96,15 +87,7 @@ a:active {
 	/* line-height: 0; */
 	padding-top: .8vw;
 }
-#aboutTitle{
-	font-size: 6em;
-	line-height: 1.2;
-	padding-left: 2.5vw;
-}
-#aboutText{
-	font-size: 1.5em;
-	padding: 0 2.5vw;
-}
+
 
 /* HEADER */
 header{
@@ -221,6 +204,16 @@ li{
 
 	}
 
+	#aboutTitle{
+		font-size: 6em;
+		line-height: 1.2;
+		padding-left: 2.5vw;
+	}
+	#aboutText{
+		font-size: 1.5em;
+	
+		padding: 0 2.5vw;
+	}
 
 	header{
 
@@ -266,6 +259,9 @@ li{
 		
 	}
 	#pfp{
+		/* object-fit: contain; */
+
+
 		height: 100%;
 		width: 100%;
 	}
@@ -379,6 +375,36 @@ li{
 @media only screen and (min-width: 916px) {
     /* Your CSS rules for large desktops */
 
+
+	#aboutTitle{
+		font-size: 4vw;
+		line-height: 1.2;
+		padding-left: 2.5vw;
+		/* background-color: #e12929; */
+		/* height: 20%; */
+	}
+	#aboutText{
+		/* height: 80%; */
+		/* background-color: #f0f0f0; */
+		font-size: 1.3vw;
+		padding: 0 2.5vw;
+		
+	}	
+
+	.l_about{
+		max-width: 55vw;
+		max-height: 55vw;
+		line-height: 0;
+	
+	}
+	.r_about{
+		max-width: 45vw;
+		max-height: 45vw;
+		line-height: 1.25;
+		width: fit-content;
+	}
+
+
 	/* TITLE */
 	#home{
 		height: 100vh;
@@ -405,13 +431,17 @@ li{
 		color: #374649;
 		align-items: center;
 		justify-content: center;
+		display: flex;
+
 	}
 
 	#about{
 		display: flex;
 	}
 	#pfp{
+		/* object-fit: contain; */
 		height: 100%;
+		/* object-position: center; */
 		width: 100%;
 	}
 
