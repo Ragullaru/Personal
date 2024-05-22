@@ -222,7 +222,15 @@ li{
 	}
 
 
-	
+	header{
+
+		font-size: 1.75em;
+	}
+	#navbar img{
+		height: 10vw;
+		width: 10vw;
+		padding: 1vw 5vw;
+	}
 	/* TITLE */
 	#home{
 		height: 100vh;
@@ -340,7 +348,7 @@ li{
 		color: white;
 		border: none;
 		background-color: #e97f0d;
-		padding: .75vw 1.5vw;
+		padding: 1vw 1.75vw;
 		font-size: 1em;
 		border-radius: 1.5vw;
 		align-items: center;
