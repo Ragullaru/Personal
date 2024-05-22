@@ -1,0 +1,595 @@
+@charset "UTF-8";
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-size: 100%;
+	height: 100%;
+	font-family: Trueno;
+}
+
+/* LINKS */
+a{
+	color: #dfe0ea;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	color: #e97f0d;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: Trueno;
+	src: url(Fonts/Trueno-wml2.otf);
+}
+@font-face {
+	font-family: Trueno_light;
+	src: url(Fonts/TruenoLight-E2pg.otf);
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.l_about2{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+.r_about2{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+.l_resume{
+	width: 50%;
+	height: 100%;
+}
+.r_resume{
+	width: 50%;
+	height: 100%;
+}
+
+
+/* TEXT */
+.h1 .h2 .h3 .h4 .h5{
+	color: black;
+}
+#title{
+	text-align: center;
+	font-size: 7em;
+	margin: 0;
+	padding: 0;
+	/* line-height: 0; */
+}
+#titleInfo{
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+	/* line-height: 0; */
+	padding-top: .8vw;
+}
+
+
+/* HEADER */
+header{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 0;
+	transition: opacity 0.4s ease;
+	background-color: rgb(26, 37, 40, 0.8);
+}
+header.hidden{
+	opacity: 0;
+}
+header.backgroundhidden{
+	background-color: transparent;
+}
+#navbar img{
+	height: 3vw;
+	width: 3vw;
+}
+
+ul{ 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0;
+	} 
+li{ 
+	display:inline; 
+	padding: .8vw 2vw;
+}
+
+
+.projectBox {
+	position: relative;
+
+	min-height: 180px;
+	max-height: 200px;
+		
+	min-width: 288px;
+	max-width: 320px;
+
+	height: 10vw;
+	width: 16vw;
+	background-color: rgb(13, 39, 61);
+
+  }
+  
+.projectImage {
+	width: 100%;
+	height: 100%;
+}
+  
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	
+}
+  
+.projectBox:hover .overlay {
+	opacity: 1;
+  }
+
+.active {
+	color: #e97f0d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 915px) {
+    /* Your CSS rules for mobile phones */
+
+	body{font-size: 50%;}
+
+	#left_section{
+
+		float: none;
+		width: 100%;
+
+	}
+	#right_section{
+
+		float: none;
+		width: 100%;
+
+	}
+
+	#aboutTitle{
+		font-size: 6em;
+		/* line-height: 1.2; */
+		/* padding-left: 2.5vw; */
+	}
+	#aboutText{
+		font-size: 1.5em;
+		/* padding: 0 2.5vw; */
+	}
+
+	header{
+
+		font-size: 1.75em;
+	}
+	#navbar img{
+		height: 6vw;
+		width: 6vw;
+		/* padding: 1vw 3vw; */
+	}
+	/* TITLE */
+	/* #home{
+		height: 100vh;
+		background-image: url('Images/background.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		color: #1a2528;
+	}
+	.page-buffer{
+		height: 25vh;
+	}
+	.title-card-container{
+		position: absolute;
+		width: 100%;
+	} */
+
+	/* ABOUT */
+	#aboutBlock{
+		width: 100%;
+		background-color: #dfe0ea;
+		color: #374649;
+		align-items: center;
+		justify-content: center;
+
+
+		overflow: hidden;
+
+	}
+
+	#pfp{
+		height: 100%;
+		width: 100%;
+	}
+
+	/* RESUME */
+	#resumeBlock{
+		width: 100%;
+		background-color: #000000;
+		color: #dfe0ea;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	#resume{
+		width: 90%;
+		overflow: hidden;
+	}
+
+
+
+
+
+
+
+	.pageTitle{
+		padding-top: 2.5vw;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		color: #dfe0ea;
+	}
+	.resumeText{
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		color: #adb7c4;
+	}
+	#skillsTitle{
+		font-size: 1.3em;
+		text-align: center;
+	}
+	#skillsText{
+		font-size: 1em;
+		padding-left: 2.5vw;
+	}
+	.contactText{
+		font-size: 1em;
+		padding-left: 2.5vw;
+		color: white;	
+	}
+	.contactText img{
+		height: 2.4vw;
+		width: 2.4vw;
+		vertical-align: middle;
+		padding: 1vw;
+	}
+	.percent_bar {
+		position: relative;
+		top: .5vw;
+		width: 90%;
+		height: .25vw;
+		border-radius: .5vw;
+		background-color: #f0f0f0;
+	}
+	.percent_amt {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		border-radius: .5vw;
+		text-align: right;
+		font-size: 1.75vh;
+		box-shadow: 0 0 .25vw .1vw #9d5910;
+		background-color: #e97f0d;
+	}
+	.buttonBlock{
+		width: 100%;
+		height: 7.5vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+
+
+
+
+
+
+
+	#resumeButton{
+		color: white;
+		border: none;
+		background-color: #e97f0d;
+		padding: 1vw 1.75vw;
+		font-size: 1em;
+		border-radius: 1.5vw;
+		align-items: center;
+	}
+
+
+
+
+
+
+
+
+	#resumeButton:hover{
+		color: white;
+		text-shadow: 0 0 .5vw #dfe0ea;
+	}
+
+	/* PROJECTS */
+	#projects{
+
+		background-color: #dfe0ea;
+		overflow: hidden;
+
+	}
+
+	/* CONTACT */
+	#contact{
+
+		background-color: rgb(5, 20, 33);
+		overflow: hidden;
+
+	}
+}
+
+/* Tablets */
+@media only screen and (min-width: 916px) {
+    /* Your CSS rules for large desktops */
+
+
+	#aboutTitle{
+		font-size: 4vw;
+		/* line-height: 1.2;
+		padding-left: 2.5vw; */
+		/* background-color: #e12929; */
+		/* height: 20%; */
+	}
+	#aboutText{
+		/* height: 80%; */
+		/* background-color: #f0f0f0; */
+		font-size: 1.3vw;
+		/* padding: 0 2.5vw; */
+		
+	}	
+
+	.l_about{
+		max-width: 55vw;
+		max-height: 55vw;
+		line-height: 0;
+	
+	}
+	.r_about{
+		max-width: 45vw;
+		max-height: 45vw;
+		line-height: 1.25;
+		width: fit-content;
+	}
+
+
+	/* TITLE */
+	/* #home{
+		height: 100vh;
+		background-image: url('Images/background.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		color: #1a2528;
+	}
+	.page-buffer{
+		height: 25vh;
+	}
+	.title-card-container{
+		position: absolute;
+		width: 100%;
+	} */
+
+	/* ABOUT */
+	#aboutBlock{
+		width: 100%;
+		background-color: #dfe0ea;
+		color: #374649;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+
+	}
+
+
+	#pfp{
+		height: 100%;
+		width: 100%;
+	}
+
+	/* RESUME */
+	#resumeBlock{
+		width: 100%;
+		background-color: #000000;
+		color: #dfe0ea;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#resume{
+		width: 50%;
+		overflow: hidden;
+	}
+	.pageTitle{
+		padding-top: 2.5vw;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		color: #dfe0ea;
+	}
+	.resumeText{
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+		color: #adb7c4;
+	}
+	#skillsTitle{
+		font-size: 1.3em;
+		text-align: center;
+	}
+	#skillsText{
+		font-size: 1em;
+		padding-left: 2.5vw;
+	}
+	.contactText{
+		font-size: 1em;
+		padding-left: 2.5vw;
+		color: white;	
+	}
+	.contactText img{
+
+		height: 2.4vw;
+		width: 2.4vw;
+		vertical-align: middle;
+		padding: 1vw;
+
+	}
+
+	.percent_bar {
+		position: relative;
+		top: .5vw;
+		width: 90%;
+		height: .25vw;
+		border-radius: .5vw;
+		background-color: #f0f0f0;
+	}
+
+	.percent_amt {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		border-radius: .5vw;
+		text-align: right;
+		font-size: 1.75vh;
+		box-shadow: 0 0 .25vw .1vw #9d5910;
+		background-color: #e97f0d;
+	}
+	.buttonBlock{
+		width: 100%;
+		height: 7.5vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#resumeButton{
+		color: white;
+		border: none;
+		background-color: #e97f0d;
+		padding: .75vw 1.5vw;
+		font-size: 1em;
+		border-radius: 1.5vw;
+		align-items: center;
+	}
+	#resumeButton:hover{
+		color: white;
+		text-shadow: 0 0 .5vw #dfe0ea;
+	}
+
+	/* PROJECTS */
+	#projects{
+
+		background-color: #dfe0ea;
+		overflow: hidden;
+
+	}
+
+	/* CONTACT */
+	#contact{
+
+		background-color: rgb(5, 20, 33);
+		overflow: hidden;
+
+	}
+	
+}
+
+/* ALLLLLLLL */
+
+#aboutTitle{
+	/* font-size: 4vw; */
+	line-height: 1.2;
+	padding-left: 2.5vw;
+	/* background-color: #e12929; */
+	/* height: 20%; */
+}
+#aboutText{
+	/* height: 80%; */
+	/* background-color: #f0f0f0; */
+	/* font-size: 1.3vw; */
+	padding: 0 2.5vw;
+	
+}	
+
+#home{
+	height: 100vh;
+	background-image: url('Images/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #1a2528;
+}
+.page-buffer{
+	height: 25vh;
+}
+.title-card-container{
+	position: absolute;
+	width: 100%;
+}
+
+
+
+
+
+
+
